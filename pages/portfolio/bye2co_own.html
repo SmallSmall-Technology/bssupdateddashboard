@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar" class="expand">
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="/images/Logo.svg" alt="Logo"  class="d-inline-block align-text-top">
+                 </a>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="/index.html" class="sidebar-link">
+                        <img src="/images/home.svg" alt="home">
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <img src="/images/portfolio.svg" alt="home">
+                        <span>Portfolio</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="/pages/portfolio/bye2co_own.html" class="sidebar-link d-flex justify-content-between">
+                                <span>Buy2Co-own</span>
+                                <span>7</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/pages/portfolio/buyNowPayLater.html" class="sidebar-link d-flex justify-content-between">
+                                <span>BuyNowPayLater</span>
+                                <span>1</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link d-flex justify-content-between">
+                                <span>OwnNowPayLater</span>
+                                <span>1</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <img src="/images/marketInsight.svg" alt="home">
+                        <span>Market insight</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <img src="/images/wallet.png" alt="home">
+                        <span>Wallet</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <img src="/images/dataflow.svg" alt="home">
+                        <span>Referral</span>
+                    </a>
+                </li>
+                
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#support" aria-expanded="false" aria-controls="support">
+                        <img src="/images/support.svg" alt="home">
+                        <span>Support</span>
+                    </a>
+                    <ul id="support" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <div class="line_divider"></div>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link d-flex justify-content-between">
+                                Notification
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link d-flex justify-content-between">
+                                Knowledgebase
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link d-flex justify-content-between"> Goto BuySmallsmall Website</a>
+                        </li>
+                    </ul>
+                </li>
+               
+            </ul>
+            <!-- <div class="sidebar-footer">
+                <a href="#" class="sidebar-link">
+                    <i class="lni lni-exit"></i>
+                    <span>Logout</span>
+                </a>
+            </div> -->
+        </aside>
+        <div class="main portfolio">
+            <header class="header">
+                <div class="inner-wrapper">
+                    <div class="d-flex justify-content-center g-23">
+                        <div  class="toggle-btn menu-icon" onclick="openSidebar()">
+                          <span class="material-icons-outlined">menu</span>
+                        </div>
+                        <div class="header-left">
+                            <span class="welcome"></span>
+                        </div>
+                    </div>
+                    <!-- <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                    </button> -->
+
+                    <div class="header-right">
+                        <img src="/images/globe.svg" alt="glob" />
+                        <img src="/images/help.svg" alt="glob" />
+                        <img src="/images/bell.png" alt="glob" />
+                        <div class="avater_profile">
+                            <img src="/images/avater.svg" alt="glob" />
+                            <div class="profile_better">
+                              <p class="bright">Bright</p>
+                              <img src="/images/Arrowdown.svg" alt="glob" />
+                            </div>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button> -->
+                
+                
+            </header>
+
+            <!-- Main Area -->
+            <div class="main-content">
+                <div class="content">
+                    <h1 class="title">
+                        Buy2Co-own                    
+                    </h1>
+                    <p class="desc">Manage your portfolio on the BuySmallsmall platform</p>
+                    <!-- info -->
+                    <!-- <section class="info">
+                        <div class="info-text">
+                            <img src="/images/infoIcon.svg" alt="info"/>
+                            <div class="info-desc">
+                                <h4 class="info-title">Grow your portfolio with property shares</h4>
+                                <p class="info-desc">Start with N4,000 and keeping growing</p>
+                            </div>
+                        </div>
+                        <button class="btn">
+                            Buy shares
+                        </button>
+                    </section> -->
+
+                    <!--overview  -->
+                    <section class="section2 mt">
+                        <div class="inner-section">
+                            <div class="overview-left">
+                                <div class="overviews">
+                                    <img src="/images/portfolio1.svg" alt="portfolio" />
+                                    <div class="overview-col">
+                                        <div>
+                                            <h2 class="overview-amount">7</h2>
+                                            <p class="overview-desc">Property Shares Portfolio</p>
+                                        </div>
+    
+                                        <div class="mt-86">
+                                            <h4 class="overview-desc">Portfolio Value</h4>
+                                            <h2 class="overview-amount mt-11">N23,000.00</h2>
+                                        </div>
+    
+                                        <!-- <button class="btn mt">Manage</button> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="overview-right" style="margin-left: 30px;">
+                                
+                                <div class="inner-content">
+                                    <div class="portfolio_chart">
+                                        <img src="/images/lineChart.svg" alt="chart"/>
+                                        <span>Buyback appreciation chart</span>
+                                        <div class="charts-card">
+                                            <div id="bar-chart" style="min-height:300px;" ></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+
+                                <!--  -->
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                   <section class="property_share">
+                    <div class="inner-content col_layout" >
+                        <h5 class="property_title">Property Shares</h5>
+
+                        <div class="property_nav">
+                            <div class="property_nav_item active">
+                                <img src="/images/gift.svg" alt="gift"/>
+                                <span class="property_text active">Shares</span>
+                                <div class="property_num active">
+                                    <span class="active">200</span>
+                                </div>
+                            </div>
+                            <div class="property_nav_item">
+                                <img src="/images/gift.svg" alt="gift"/>
+                                <span class="property_text">Gift Basket</span>
+                                <div class="property_num">
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <div class="property_nav_item">
+                                <img src="/images/gift.svg" alt="gift"/>
+                                <span class="property_text">Shares Target Program</span>
+                                <div class="property_num">
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <div class="property_nav_item">
+                                <img src="/images/gift.svg" alt="gift"/>
+                                <span class="property_text">History</span>
+                                <!-- <div class="property_num">
+                                    <span>200</span>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                   </section>
+
+
+                   <section class="data_tbl col-item">
+                        <div class="data_tbl_inner m-20">
+                            <h5 class="tbl_titles">Your shares</h5>
+                            <p class="data_tbl_desc">Overview of all the property shares you hold on the BuySmallsmall platform</p>
+                        </div>
+
+                        <div class="share_content">
+                            <div class="share_items">
+                                <div class="share_inner d-flexs ">
+                                    <img src="/images/plus.svg" alt="" />
+                                    <button class="btn w-p">
+                                        Buy more shares
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="share_items">
+                                <div class="share_inner">
+                                    <img src="/images/circle.svg" alt="" />
+                                    <h5 class="share_innter_text">Olivia court A 1 bed Lekki Phase 1</h5>
+                                    <div class="share_text_content">
+                                        <div>
+                                            <p class="text_port">Shares</p>
+                                            <p class="num_port">50</p>
+                                        </div>
+                                        <div>
+                                            <p class="text_port">Purchase Date</p>
+                                            <p class="num_port">Jul 2023</p>
+                                        </div>
+                                        <div>
+                                            <p class="text_port">Status</p>
+                                            <p class="num_port">Active</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="row_share">
+                                        <img src="/images/settings.svg" alt=""/>
+                                        <p class="btn_porto">Manage</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="share_items">
+                                <div class="share_inner">
+                                    <img src="/images/circle.svg" alt="" />
+                                    <h5 class="share_innter_text">Olivia court A 1 bed Lekki Phase 1</h5>
+                                    <div class="share_text_content">
+                                        <div>
+                                            <p class="text_port">Shares</p>
+                                            <p class="num_port">50</p>
+                                        </div>
+                                        <div>
+                                            <p class="text_port">Purchase Date</p>
+                                            <p class="num_port">Jul 2023</p>
+                                        </div>
+                                        <div>
+                                            <p class="text_port">Status</p>
+                                            <p class="num_port">Active</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="row_share">
+                                        <img src="/images/settings.svg" alt=""/>
+                                        <p class="btn_porto">Manage</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="share_items">
+                                <div class="share_inner">
+                                    <img src="/images/circle.svg" alt="" />
+                                    <h5 class="share_innter_text">Olivia court A 1 bed Lekki Phase 1</h5>
+                                    <div class="share_text_content">
+                                        <div>
+                                            <p class="text_port">Shares</p>
+                                            <p class="num_port">50</p>
+                                        </div>
+                                        <div>
+                                            <p class="text_port">Purchase Date</p>
+                                            <p class="num_port">Jul 2023</p>
+                                        </div>
+                                        <div>
+                                            <p class="text_port">Status</p>
+                                            <p class="num_port">Active</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="row_share">
+                                        <img src="/images/settings.svg" alt=""/>
+                                        <p class="btn_porto">Manage</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            
+                            
+                        </div>
+                   </section>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
