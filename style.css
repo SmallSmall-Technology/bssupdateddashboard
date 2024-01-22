@@ -24,9 +24,13 @@ h1, h2, h3, h4, h5, h6{
     margin: 0;
     padding: 0;
 }
+
 a {
+    display: inline-block;
     text-decoration: none;
-}
+    transition: var(--transition);
+    
+  }
 
 li {
     list-style: none;
@@ -600,3 +604,126 @@ a.sidebar-link span {
 /* #SvgjsSvg1001{
     height: 360px;
 } */
+
+/* wallet */
+
+.btn-sec{
+    width: fit-content;
+    padding: 19px 118px;
+    border-radius: 10px;
+    background: #222;
+    font-style: normal;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    z-index: 1;
+    color: var(--color-white);
+    overflow: hidden;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: normal;
+    margin-top: 62px;
+    gap: 8px;
+
+}
+.btn-sec:hover{
+    background-color: #151313;
+    border-color: #151313;
+    color: #F7F8FA;
+}
+
+.wallet_balance{
+    width: 100%;
+    border-radius: 10px;
+    border: 1.8px solid #E9E9E9;
+    background: #F9F9FB;
+}
+.text_align{
+    text-align: center;
+}
+.btn_content{
+    margin-top: 40px;
+    gap: 20px;
+}
+.wallet_balance_num{
+    color: #222;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.line_vertical{
+    border: 1px solid #E9E9E9;
+    height: 176px;
+}
+.wallet_detail_desc{
+    color: #222;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   
+}
+
+.wallet_account_name{
+    margin-top: 16px;
+}
+.wallet_detail_value{
+    color: #222;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 6px;
+}
+.wallet_account_detail{
+    display: flex;
+    gap: 70px;
+    margin-top: 29px;
+}
+.wallet_status{
+    border-radius: 30px;
+    background: #FCAF1B;
+    display: flex;
+    width: 105px;
+    padding: 6px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+}
+.wallet_status.pending{
+    background: #FCAF1B;
+    color:  #333;
+}
+.wallet_status.successful{
+    background: #138E3D;
+    color: #F2F2F2;
+}
+.wallet_status.failed{
+    background: #AA2431;
+    color: #F2F2F2;
+}
+.wallet_text_amount{
+    color: #222;
+    /* B1/Regular */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
