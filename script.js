@@ -1,8 +1,108 @@
 const hamBurger = document.querySelector(".toggle-btn");
+const menuIcon = document.querySelector(".toggle_menu");
+const openModalBtn = document.querySelector('.profile_modal');
+const share =  document.querySelector('#share');
+const basket =  document.querySelector('#basket');
+const program =  document.querySelector('#program');
+const history =  document.querySelector('#history');
+const property =  document.querySelector('#property');
+const certificate =  document.querySelector('#certificate');
+// 
+const own_share =  document.querySelector('#own_shares');
+const own_basket =  document.querySelector('#own_gift');
+const own_program =  document.querySelector('#own_program');
+const own_history =  document.querySelector('#own_history');
+const own_property =  document.querySelector('#own_property');
+const own_certificate =  document.querySelector('#own_certificate');
 
-hamBurger.addEventListener("click", function () {
-  document.querySelector("#sidebar").classList.toggle("expand");
+let sidebarOpen = false;
+
+
+const sidebar = document.getElementById('sidebar');
+
+hamBurger?.addEventListener("click", function () {
+  document.querySelector("#sidebar").classList.add("expand");
 });
+
+
+function openSidebar() {
+  
+    sidebar.classList.toggle('enlarge');
+    menuIcon.classList.remove('menu-icon')
+    menuIcon.classList.add('displayInline')
+
+}
+
+function closeSidebar() {
+    sidebar.classList.remove('enlarge');
+    menuIcon.classList.add('menu-icon')
+}
+function openModalPofile() {
+    openModalBtn.classList.toggle('display_profile');
+}
+function handleShare() {
+  share.classList.add('active');
+  basket.classList.remove('active');
+  program.classList.remove('active');
+  history.classList.remove('active');
+
+  own_share.classList.remove('d_gift');
+  own_basket.classList.add('d_gift');
+  own_program.classList.add('d_gift');
+  own_history.classList.add('d_gift');
+  
+}
+function handleBasket() {
+  basket.classList.add('active');
+  share.classList.remove('active');
+  program.classList.remove('active');
+  history.classList.remove('active');
+  // content
+  own_basket.classList.remove('d_gift');
+  own_share.classList.add('d_gift');
+  own_program.classList.add('d_gift');
+  own_history.classList.add('d_gift');
+
+}
+function handleProgram() {
+  program.classList.add('active');
+  basket.classList.remove('active');
+  share.classList.remove('active');
+  history.classList.remove('active');
+
+  own_program.classList.remove('d_gift');
+  own_basket.classList.add('d_gift');
+  own_share.classList.add('d_gift');
+  own_history.classList.add('d_gift');
+}
+function handleHistory() {
+  history.classList.add('active');
+  program.classList.remove('active');
+  basket.classList.remove('active');
+  share.classList.remove('active');
+
+  own_history.classList.remove('d_gift');
+  own_program.classList.add('d_gift');
+  own_basket.classList.add('d_gift');
+  own_share.classList.add('d_gift');
+}
+function handleProperty() {
+  property.classList.add('active');
+  certificate.classList.remove('active');
+
+  own_property.classList.remove('d_gift');
+  own_certificate.classList.add('d_gift');
+  
+}
+function handleCertificate() {
+  certificate.classList.add('active');
+  property.classList.remove('active');
+  
+
+  own_certificate.classList.remove('d_gift');
+  own_property.classList.add('d_gift');
+}
+
 
 
 // ---------- CHARTS ----------

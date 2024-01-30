@@ -18,11 +18,13 @@
 
 <body>
     <div class="wrapper">
+      
         <aside id="sidebar" class="expand">
             <div class="logo">
                 <a class="navbar-brand" href="#">
                     <img src="/images/Logo.svg" alt="Logo"  class="d-inline-block align-text-top">
-                 </a>
+                </a>
+                <img class="close_btn" src="/images/close.svg" alt="" onclick="closeSidebar()"/>
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
@@ -52,7 +54,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link d-flex justify-content-between">
+                            <a href="/pages/portfolio/ownNowPayLater.html" class="sidebar-link d-flex justify-content-between">
                                 <span>OwnNowPayLater</span>
                                 <span>1</span>
                             </a>
@@ -61,19 +63,19 @@
                 </li>
 
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="/pages/buyss_market_insight.html" class="sidebar-link">
                         <img src="/images/marketInsight.svg" alt="home">
                         <span>Market insight</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="/pages/wallet.html" class="sidebar-link">
                         <img src="/images/wallet.png" alt="home">
                         <span>Wallet</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="/pages/buyss_referral.html" class="sidebar-link">
                         <img src="/images/dataflow.svg" alt="home">
                         <span>Referral</span>
                     </a>
@@ -104,19 +106,25 @@
                 </li>
                
             </ul>
-            <!-- <div class="sidebar-footer">
-                <a href="#" class="sidebar-link">
-                    <i class="lni lni-exit"></i>
-                    <span>Logout</span>
-                </a>
-            </div> -->
+          
         </aside>
         <div class="main">
+            <div class="profile_modal">
+                <a href="/pages/profile.html" class="profile_modal_row">
+                    <img src="/images/profile.svg" alt="" />
+                    <p class="profile_modal_row_text">Profile</p>
+                </a>
+                <div class="profile_modal_row">
+                    <img src="/images/exit.svg" alt="" />
+                    <p class="profile_modal_row_text">Logout</p>
+                </div>
+            </div>
             <header class="header">
+                
                 <div class="inner-wrapper">
-                    <div class="d-flex justify-content-center g-23">
-                        <div  class="toggle-btn menu-icon" onclick="openSidebar()">
-                          <span class="material-icons-outlined">menu</span>
+                    <div class="d-flex justify-content-center g-23 align-items-center">
+                        <div  class="toggle_menu menu-icon" onclick="openSidebar()">
+                            <img class="handburger" src="/images/handburger.svg" alt="" />
                         </div>
                         <div class="header-left">
                             <span class="welcome">Welcome, Bright</span>
@@ -127,22 +135,21 @@
                     </button> -->
 
                     <div class="header-right">
-                        <img src="/images/globe.svg" alt="glob" />
-                        <img src="/images/help.svg" alt="glob" />
-                        <img src="/images/bell.png" alt="glob" />
-                        <div class="avater_profile">
-                            <img src="/images/avater.svg" alt="glob" />
+                        <img class="nav_img" src="/images/globe.svg" alt="" />
+                        <img class="nav_img" src="/images/help.svg" alt="" />
+                        <img  src="/images/bell.png" alt="" />
+                        <div class="avater_profile" onclick="openModalPofile()">
+                            <img src="/images/avater.svg" alt="" />
                             <div class="profile_better">
                               <p class="bright">Bright</p>
-                              <img src="/images/Arrowdown.svg" alt="glob" />
+                              <img src="/images/Arrowdown.svg" alt="" />
                             </div>
                         </div>
+                        <img class="logoMobile" src="/images/logoMobile.svg" alt="" />
                       </div>
                 </div>
 
-                <!-- <button class="toggle-btn" type="button">
-                    <i class="lni lni-grid-alt"></i>
-                </button> -->
+               
                 
                 
             </header>
@@ -163,7 +170,7 @@
                                 <p class="info-desc">Start with N4,000 and keeping growing</p>
                             </div>
                         </div>
-                        <button class="btn">
+                        <button class="btn mg_left">
                             Buy shares
                         </button>
                     </section>
@@ -232,7 +239,8 @@
                                             <div class="ruler  ml-18"></div>
                                         </div>
                                     </div>
-
+                                    <!-- ruler -->
+                                    <div class="bar_lines"></div>
 
                                     <!-- second section  -->
                                     
@@ -241,8 +249,8 @@
                                         <div class="overview-text">
                                             <div class="overview-col">
                                                 <div>
-                                                    <h2 class="overview-amount">N23,000.00</h2>
-                                                    <p class="overview-desc">Buyback Appreciation</p>
+                                                    <h2 class="overview-amount">N10,000.00</h2>
+                                                    <p class="overview-desc">Wallet Balance</p>
                                                 </div>
                                                 <div class="mt">
                                                     <h4 class="overview-desc">Recent activity</h4>
@@ -276,14 +284,15 @@
                                     </div>
                                     
                                     <!-- third section -->
-                                    
-                                    <div class="overview">
+                                    <div class="bar_lines"></div>
+
+                                    <div class="overview mb_51">
                                         <img src="/images/gift.svg" alt="portfolio" />
                                         
                                         <div class="overview-col">
                                             <div>
                                                 <h2 class="overview-desc">Gift Basket</h2>
-                                                <p class="overview-amount">0 <span class="overview-desc">shares</span></p>
+                                                <p class="overview-amount marg_t">0 <span class="overview-desc">shares</span></p>
                                             </div>  
                                             <button class="btn mt-143">Start gifting</button>
                                         </div>
@@ -304,11 +313,13 @@
 
                     </section>
 
-                    <div class="data_tbl">
+                    <div class="data_tbl ">
                         <div class="data_tbl_inner">
-                            <h4 class="tbl_title">Recent Activity</h4>
-                            <table class="table">
-                                <thead>
+                            <h4 class="tbl_title d_none">Recent Activity</h4>
+                            <p class="prop_info">Property info</p>
+                            
+                            <table class="table tbl_mobile">
+                                <thead class="thead">
                                   <tr>
                                     <td scope="col" class="tb-color">Property Name</td>
                                     <td scope="col" class="tb-color">Date</th>
@@ -355,7 +366,75 @@
                                   </tr>
                                  
                                 </tbody>
-                              </table>
+                            </table>
+
+                            <!-- for mobile -->
+                            <div class="mobile_rule"></div>
+
+                            <div class="data_tbl_mobile">
+
+                                <div class="data_tbl_mobile_item">
+                                    <h4 class="data_mobile_title">Olivia heights 2 bed Maisonette in Lekki phase 1 Unit 6</h4>
+
+                                    <div class="mobil_row">
+                                        <div class="mobil_col">
+                                            <p class="moble_date_text">Date</p>
+                                            <p class="moble_date_value">21/05/2023 09:31</p>
+                                        </div>
+                                        <div class="mobil_col">
+                                            <p class="moble_date_text">Package</p>
+                                            <p class="mobile_buyBtn">BuyNowPayLater</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobil_col " style="margin-top: 16px;">
+                                        <p class="moble_date_text">Price</p>
+                                        <p class="mobile_buyBtn">N85,000,000</p>
+                                    </div>
+                                </div>
+
+                                <div class="mobile_rule"></div>
+
+                                <div class="data_tbl_mobile_item">
+                                    <h4 class="data_mobile_title">Olivia heights 2 bed Maisonette in Lekki phase 1 Unit 6</h4>
+
+                                    <div class="mobil_row">
+                                        <div class="mobil_col">
+                                            <p class="moble_date_text">Date</p>
+                                            <p class="moble_date_value">21/05/2023 09:31</p>
+                                        </div>
+                                        <div class="mobil_col">
+                                            <p class="moble_date_text">Package</p>
+                                            <p class="mobile_buyBtn">BuyNowPayLater</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobil_col " style="margin-top: 16px;">
+                                        <p class="moble_date_text">Price</p>
+                                        <p class="mobile_buyBtn">N85,000,000</p>
+                                    </div>
+                                </div>
+
+                                <div class="mobile_rule"></div>
+
+                                <div class="data_tbl_mobile_item">
+                                    <h4 class="data_mobile_title">Olivia heights 2 bed Maisonette in Lekki phase 1 Unit 6</h4>
+
+                                    <div class="mobil_row">
+                                        <div class="mobil_col">
+                                            <p class="moble_date_text">Date</p>
+                                            <p class="moble_date_value">21/05/2023 09:31</p>
+                                        </div>
+                                        <div class="mobil_col">
+                                            <p class="moble_date_text">Package</p>
+                                            <p class="mobile_buyBtn">BuyNowPayLater</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobil_col " style="margin-top: 16px;">
+                                        <p class="moble_date_text">Price</p>
+                                        <p class="mobile_buyBtn">N85,000,000</p>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>

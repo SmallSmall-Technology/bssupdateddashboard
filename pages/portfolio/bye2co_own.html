@@ -25,7 +25,8 @@
             <div class="logo">
                 <a class="navbar-brand" href="#">
                     <img src="/images/Logo.svg" alt="Logo"  class="d-inline-block align-text-top">
-                 </a>
+                </a>
+                <img class="close_btn" src="/images/close.svg" alt="" onclick="closeSidebar()"/>
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
@@ -55,7 +56,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link d-flex justify-content-between">
+                            <a href="/pages/portfolio/ownNowPayLater.html" class="sidebar-link d-flex justify-content-between">
                                 <span>OwnNowPayLater</span>
                                 <span>1</span>
                             </a>
@@ -64,19 +65,19 @@
                 </li>
 
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="/pages/buyss_market_insight.html" class="sidebar-link">
                         <img src="/images/marketInsight.svg" alt="home">
                         <span>Market insight</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="/pages/wallet.html" class="sidebar-link">
                         <img src="/images/wallet.png" alt="home">
                         <span>Wallet</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="/pages/buyss_referral.html" class="sidebar-link">
                         <img src="/images/dataflow.svg" alt="home">
                         <span>Referral</span>
                     </a>
@@ -107,19 +108,24 @@
                 </li>
                
             </ul>
-            <!-- <div class="sidebar-footer">
-                <a href="#" class="sidebar-link">
-                    <i class="lni lni-exit"></i>
-                    <span>Logout</span>
-                </a>
-            </div> -->
+          
         </aside>
         <div class="main portfolio">
+            <div class="profile_modal">
+                <a href="/pages/profile.html" class="profile_modal_row">
+                    <img src="/images/profile.svg" alt="" />
+                    <p class="profile_modal_row_text">Profile</p>
+                </a>
+                <div class="profile_modal_row">
+                    <img src="/images/exit.svg" alt="" />
+                    <p class="profile_modal_row_text">Logout</p>
+                </div>
+            </div>
             <header class="header">
                 <div class="inner-wrapper">
-                    <div class="d-flex justify-content-center g-23">
-                        <div  class="toggle-btn menu-icon" onclick="openSidebar()">
-                          <span class="material-icons-outlined">menu</span>
+                    <div class="d-flex justify-content-center g-23 align-items-center">
+                        <div  class="toggle_menu menu-icon" onclick="openSidebar()">
+                            <img class="handburger" src="/images/handburger.svg" alt="" />
                         </div>
                         <div class="header-left">
                             <span class="welcome"></span>
@@ -130,22 +136,21 @@
                     </button> -->
 
                     <div class="header-right">
-                        <img src="/images/globe.svg" alt="glob" />
-                        <img src="/images/help.svg" alt="glob" />
-                        <img src="/images/bell.png" alt="glob" />
-                        <div class="avater_profile">
-                            <img src="/images/avater.svg" alt="glob" />
+                        <img class="nav_img" src="/images/globe.svg" alt="" />
+                        <img class="nav_img" src="/images/help.svg" alt="" />
+                        <img  src="/images/bell.png" alt="" />
+                        <div class="avater_profile" onclick="openModalPofile()">
+                            <img src="/images/avater.svg" alt="" />
                             <div class="profile_better">
                               <p class="bright">Bright</p>
-                              <img src="/images/Arrowdown.svg" alt="glob" />
+                              <img src="/images/Arrowdown.svg" alt="" />
                             </div>
                         </div>
+                        <img class="logoMobile" src="/images/logoMobile.svg" alt="" />
                       </div>
                 </div>
 
-                <!-- <button class="toggle-btn" type="button">
-                    <i class="lni lni-grid-alt"></i>
-                </button> -->
+               
                 
                 
             </header>
@@ -158,7 +163,7 @@
                     </h1>
                     <p class="desc">Manage your portfolio on the BuySmallsmall platform</p>
                     <!-- info -->
-                    <!-- <section class="info">
+                    <section class="info info_own">
                         <div class="info-text">
                             <img src="/images/infoIcon.svg" alt="info"/>
                             <div class="info-desc">
@@ -166,16 +171,16 @@
                                 <p class="info-desc">Start with N4,000 and keeping growing</p>
                             </div>
                         </div>
-                        <button class="btn">
+                        <button class="btn mg_left">
                             Buy shares
                         </button>
-                    </section> -->
+                    </section>
 
                     <!--overview  -->
                     <section class="section2 mt">
-                        <div class="inner-section">
+                        <div class="inner-section bye2_own_innerSec">
                             <div class="overview-left">
-                                <div class="overviews">
+                                <div class="overviews overviews_mobile">
                                     <img src="/images/portfolio1.svg" alt="portfolio" />
                                     <div class="overview-col">
                                         <div>
@@ -193,9 +198,9 @@
                                 </div>
                             </div>
 
-                            <div class="overview-right" style="margin-left: 30px;">
+                            <div class="overview-right grap_ml" >
                                 
-                                <div class="inner-content">
+                                <div class="inner-content graph_mobile">
                                     <div class="portfolio_chart">
                                         <img src="/images/lineChart.svg" alt="chart"/>
                                         <span>Buyback appreciation chart</span>
@@ -220,30 +225,30 @@
                         <h5 class="property_title">Property Shares</h5>
 
                         <div class="property_nav">
-                            <div class="property_nav_item active">
-                                <img src="/images/gift.svg" alt="gift"/>
+                            <div id="share" class="property_nav_item active" onclick="handleShare()">
+                                <img src="/images/shares.svg" alt="gift"/>
                                 <span class="property_text active">Shares</span>
                                 <div class="property_num active">
                                     <span class="active">200</span>
                                 </div>
                             </div>
-                            <div class="property_nav_item">
+                            <div id="basket" class="property_nav_item" onclick="handleBasket()">
                                 <img src="/images/gift.svg" alt="gift"/>
                                 <span class="property_text">Gift Basket</span>
                                 <div class="property_num">
-                                    <span>200</span>
+                                    <span>0</span>
                                 </div>
                             </div>
-                            <div class="property_nav_item">
-                                <img src="/images/gift.svg" alt="gift"/>
+                            <div id="program" class="property_nav_item" onclick="handleProgram()">
+                                <img src="/images/program.svg" alt="gift"/>
                                 <span class="property_text">Shares Target Program</span>
                                 <div class="property_num">
-                                    <span>200</span>
+                                    <span>0</span>
                                 </div>
                             </div>
-                            <div class="property_nav_item">
-                                <img src="/images/gift.svg" alt="gift"/>
-                                <span class="property_text">History</span>
+                            <div id="history" class="property_nav_item property_text_mobile" onclick="handleHistory()">
+                                <img src="/images/chart.svg" alt="gift"/>
+                                <span class="property_text property_text_mobile">History</span>
                                 <!-- <div class="property_num">
                                     <span>200</span>
                                 </div> -->
@@ -252,15 +257,15 @@
                     </div>
                    </section>
 
-
-                   <section class="data_tbl col-item">
+                   <!-- shares -->
+                   <section id="own_shares" class="data_tbl col-item data_table_mobile">
                         <div class="data_tbl_inner m-20">
                             <h5 class="tbl_titles">Your shares</h5>
                             <p class="data_tbl_desc">Overview of all the property shares you hold on the BuySmallsmall platform</p>
                         </div>
 
                         <div class="share_content">
-                            <div class="share_items">
+                            <div class="share_item">
                                 <div class="share_inner d-flexs ">
                                     <img src="/images/plus.svg" alt="" />
                                     <button class="btn w-p">
@@ -269,7 +274,7 @@
                                 </div>
                             </div>
 
-                            <div class="share_items">
+                            <a href="./bye2coOwn_single.html" class="share_item">
                                 <div class="share_inner">
                                     <img src="/images/circle.svg" alt="" />
                                     <h5 class="share_innter_text">Olivia court A 1 bed Lekki Phase 1</h5>
@@ -294,8 +299,8 @@
                                         <p class="btn_porto">Manage</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="share_items">
+                            </a>
+                            <a href="./bye2coOwn_single.html" class="share_item">
                                 <div class="share_inner">
                                     <img src="/images/circle.svg" alt="" />
                                     <h5 class="share_innter_text">Olivia court A 1 bed Lekki Phase 1</h5>
@@ -320,8 +325,8 @@
                                         <p class="btn_porto">Manage</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="share_items">
+                            </a>
+                            <a href="./bye2coOwn_single.html" class="share_item">
                                 <div class="share_inner">
                                     <img src="/images/circle.svg" alt="" />
                                     <h5 class="share_innter_text">Olivia court A 1 bed Lekki Phase 1</h5>
@@ -346,12 +351,157 @@
                                         <p class="btn_porto">Manage</p>
                                     </div>
                                 </div>
-                            </div>
-                            <!--  -->
-                            
-                            
+                            </a>
+ 
                         </div>
                    </section>
+
+                   <!-- gift basket -->
+                   <section id="own_gift" class="data_tbl col-item data_table_mobile d_gift">
+                    <div class="data_tbl_inner m-20 display_basket">
+                        <div>
+                            <h5 class="menu_title">Your gift basket</h5>
+                            <p class="data_tbl_desc">Overview of all the property shares in your gift basket</p>
+                        </div>
+                        <p class="gift_history_text">Gift history</p>
+                    </div>
+
+                    <div class="share_content">
+                        <div class="share_item share_item_btn">
+                            <div class="share_inner d-flexs ">
+                                <img src="/images/plus.svg" alt="" />
+                                <button class="btn w-p">
+                                    Add more shares
+                                </button>
+                            </div>
+                        </div>
+
+                        <a href="#" class="share_item share_item_gift">
+                            <div class="share_inner">
+                                <img src="/images/gift.svg" alt="" />
+                                <h5 class="share_innter_text">Gift Basket</h5>
+                                <div class="share_text_content">
+                                    <div>
+                                        <p class="text_port">Shares</p>
+                                        <p class="num_port">50</p>
+                                    </div>
+                                    <div>
+                                        <p class="text_port">Purchase Date</p>
+                                        <p class="num_port">Jul 2023</p>
+                                    </div>
+                                    <div>
+                                        <p class="text_port">Status</p>
+                                        <p class="num_port">Active</p>
+                                    </div>
+
+                                </div>
+                                <div class="line_through" ></div>
+                                <div class="row_share">
+                                    <img src="/images/settings.svg" alt=""/>
+                                    <p class="btn_porto">Start gifting</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <!--  -->
+                        
+                        
+                    </div>
+                   </section>
+
+
+                   <!-- share Program -->
+                   <section id="own_program" class="data_tbl col-item data_table_mobile d_gift">
+                    <div class="data_tbl_inner m-20 display_basket">
+                        <div>
+                            <h5 class="menu_title">Your gift basket</h5>
+                            <p class="data_tbl_desc">Overview of all the property shares in your gift basket</p>
+                        </div>
+                        <p class="gift_history_text">Gift history</p>
+                    </div>
+
+                    <div class="share_content">
+                        <div class="share_item share_item_btn">
+                            <div class="share_inner d-flexs ">
+                                <img src="/images/plus.svg" alt="" />
+                                <button class="btn w-p">
+                                    Add more shares
+                                </button>
+                            </div>
+                        </div>
+
+                        <a href="#" class="share_item share_item_gift">
+                            <div class="share_inner">
+                                <img src="/images/gift.svg" alt="" />
+                                <h5 class="share_innter_text">Gift Basket</h5>
+                                <div class="share_text_content">
+                                    <div>
+                                        <p class="text_port">Shares</p>
+                                        <p class="num_port">50</p>
+                                    </div>
+                                    <div>
+                                        <p class="text_port">Purchase Date</p>
+                                        <p class="num_port">Jul 2023</p>
+                                    </div>
+                                    <div>
+                                        <p class="text_port">Status</p>
+                                        <p class="num_port">Active</p>
+                                    </div>
+
+                                </div>
+                                <div class="line_through" ></div>
+                                <div class="row_share">
+                                    <img src="/images/settings.svg" alt=""/>
+                                    <p class="btn_porto">Start gifting</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <!--  -->
+                        
+                        
+                    </div>
+                   </section>
+
+                   <!-- History -->    
+                    <div id="own_history" class="data_tbl data_tbl_history d_gift">
+                        <div class="data_tbl_inner tbl_mob">
+                            <h4 class="tbl_title">Shares purchase history</h4>    
+                            <table class="table tb_mobile">
+                                <thead class="thead">
+                                    <tr>
+                                    <td scope="col" class="tb-color">Amount</td>
+                                    <td scope="col" class="tb-color">Transaction id</th>
+                                    <td scope="col" class="tb-color">Date</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tl_text">N10,000</td>
+                                        <td class="tl_text">b29afd2a06811ebb96614450848d0457</td>
+                                        <td class="tl_text">Olivia heights 2 bed Maisonette in Lekki phase 1 Unit 6</td>
+                                    </tr>          
+                                    <tr>
+                                        <td class="tl_text">N10,000</td>
+                                        <td class="tl_text">b29afd2a06811ebb96614450848d0457</td>
+                                        <td class="tl_text">Olivia heights 2 bed Maisonette in Lekki phase 1 Unit 6</td>
+                                    </tr>          
+                                    <tr>
+                                        <td class="tl_text">N10,000</td>
+                                        <td class="tl_text">b29afd2a06811ebb96614450848d0457</td>
+                                        <td class="tl_text">Olivia heights 2 bed Maisonette in Lekki phase 1 Unit 6</td>
+                                    </tr>          
+                                </tbody>
+                            </table>
+
+                            <!-- for mobile -->
+       
+                        </div>
+                    </div>
+
+                   
+                    
+                   
                 </div>
             </div>
         </div>
