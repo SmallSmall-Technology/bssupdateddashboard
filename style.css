@@ -807,6 +807,7 @@ a.sidebar-link span {
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 22.4px */
+<<<<<<< HEAD
 }
 
 .displayInline{
@@ -1258,4 +1259,6 @@ a.sidebar-link span {
     }
    
    
+=======
+>>>>>>> 3b0f16db1ffa99d0a0a85a89dcc1dc01f9669998
 }
