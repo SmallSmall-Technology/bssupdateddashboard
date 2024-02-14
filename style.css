@@ -7,7 +7,9 @@
   --color-primary: #662d91;
   --color-white: #ffffff;
   --color-light: #f9f9fb;
+  --color-main:#F1F5F9;
   --transition: all 0.3s ease-in-out;
+  --color-gray:#334155;
 }
 ::after,
 ::before {
@@ -58,6 +60,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 .btn {
   width: fit-content;
   padding: 10px 21px;
@@ -75,9 +79,12 @@ body {
   border: none;
   outline: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
+  margin-bottom: 13px;
   line-height: normal;
 }
+
+
 
 .btn::after {
   content: "";
@@ -93,14 +100,21 @@ body {
   transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   z-index: -1;
 }
+
+
+
 .btn:hover {
   background-color: #2d0748;
   border-color: #2d0748;
   color: #f7f8fa;
 }
+
+
 .btn:hover::after {
   transform: translateY(-50%) translateX(-50%) scale(1);
 }
+
+
 
 .wrapper {
   display: flex;
@@ -110,15 +124,19 @@ body {
   margin: 0 auto;
 }
 
+
+
 .main {
   min-height: 100vh;
   transition: all 0.35s ease-in-out;
-  background-color: var(--color-white);
+  background-color: var(--color-main);
   margin-bottom: 50px;
   width: 100%;
   overflow-x: hidden;
   position: relative;
 }
+
+
 .profile_modal {
   position: fixed;
   z-index: 1000;
@@ -134,18 +152,24 @@ body {
   display: none;
 }
 
+
+
 .display_profile {
   display: block;
   display: flex;
   flex-direction: column;
   gap: 23px;
 }
+
+
 .profile_modal_row {
   display: flex;
   gap: 26px;
   align-items: center;
   cursor: pointer;
 }
+
+
 
 .profile_modal_row_text {
   color: #222224;
@@ -155,9 +179,13 @@ body {
   font-weight: 500;
   line-height: normal;
 }
+
+
 .profile_modal_row_text:hover {
   color: #662d91;
 }
+
+
 
 #sidebar {
   width: 260px;
@@ -166,7 +194,7 @@ body {
   min-height: 100%;
   z-index: 1000;
   transition: all 0.25s ease-in-out;
-  background: #222;
+  background: var(--color-white);
   display: flex;
   flex-direction: column;
   position: sticky;
@@ -175,6 +203,8 @@ body {
 
   /* overflow: hidden; */
 }
+
+
 .sidebar_mobile {
   width: 0px;
   min-width: 0px;
@@ -191,11 +221,15 @@ body {
   display: none;
 }
 
+
+
 .logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+
 .close_btn {
   margin-right: 20px;
   display: none;
@@ -212,6 +246,7 @@ body {
   display: block;
 }
 
+
 .toggle-btn {
   background-color: transparent;
   cursor: pointer;
@@ -219,20 +254,24 @@ body {
   padding: 1rem 1.5rem;
 }
 
+
 .toggle-btn i {
   font-size: 1.5rem;
   color: #fff;
 }
 
+
 .sidebar-logo {
   margin: auto 0;
 }
+
 
 .sidebar-logo a {
   color: #fff;
   font-size: 1.15rem;
   font-weight: 600;
 }
+
 
 #sidebar:not(.expand) .sidebar-logo,
 /* #sidebar:not(.expand) a.sidebar-link span {
@@ -244,9 +283,10 @@ body {
   flex: 1 1 auto;
 }
 
+
 a.sidebar-link {
   padding: 0.625rem 1.625rem;
-  color: #fff;
+  color: var(--color-gray);
   display: flex;
   gap: 12px;
   align-items: center;
@@ -254,9 +294,11 @@ a.sidebar-link {
   white-space: nowrap;
   border-left: 3px solid transparent;
 }
+
+
 button.sidebar-link {
   padding: 0.625rem 1.625rem;
-  color: #fff;
+  color: var(--color-gray);
   display: flex;
   gap: 12px;
   align-items: center;
@@ -268,34 +310,48 @@ button.sidebar-link {
   background: none;
 }
 
+
 .navbar-brand {
   padding-left: 1.625rem;
 }
+
+
 .logo {
   margin-top: 34px;
 }
+
 
 .sidebar-link i {
   font-size: 1.1rem;
   margin-right: 0.75rem;
 }
 
+
 a.sidebar-link:hover {
   background-color: rgba(255, 255, 255, 0.075);
-  border-left: 3px solid #3b7ddd;
+  border-left: 3px solid #662D91;
+  color: #662D91;
 }
+a.sidebar-link span:hover {
+  color: #662D91;
+}
+
 button.sidebar-link:hover {
   background-color: rgba(255, 255, 255, 0.075);
-  border-left: 3px solid #3b7ddd;
+  border-left: 3px solid #662D91;
+  color: #662D91;
 }
+
+
 a.sidebar-link span {
-  color: #fff;
+  color: var(--color-gray);
   font-family: Inter;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
+
 
 .sidebar-item {
   position: relative;
@@ -311,6 +367,7 @@ a.sidebar-link span {
   display: none;
 }
 
+
 #sidebar:not(.expand) .sidebar-item:hover .has-dropdown + .sidebar-dropdown {
   display: block;
   /* max-height: 15em; */
@@ -319,6 +376,7 @@ a.sidebar-link span {
   position: sticky;
   top: 0;
 }
+
 
 #sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
   border: solid;
@@ -332,6 +390,7 @@ a.sidebar-link span {
   transform: rotate(-135deg);
   transition: all 0.2s ease-out;
 }
+
 
 #sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
   transform: rotate(45deg);
@@ -349,7 +408,7 @@ a.sidebar-link span {
   width: 100%;
   margin: 0 auto;
   height: 67px;
-  background-color: #ffffff;
+  background-color: var(--color-main);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -409,7 +468,7 @@ a.sidebar-link span {
 
 .main-content {
   width: 100%;
-  background: var(--color-white);
+  background: var(--color-main);
 
   margin-top: 100px;
   /* background-color: goldenrod; */
@@ -593,7 +652,7 @@ a.sidebar-link span {
 .earning_text {
   color: #222;
   font-family: Inter;
-  font-size: 14px;
+  font-size: 10.5px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -692,7 +751,7 @@ a.sidebar-link span {
   width: fit-content;
   padding: 19px 118px;
   border-radius: 10px;
-  background: #222;
+  background: #662D91;
   font-style: normal;
   height: auto;
   display: flex;
@@ -713,7 +772,7 @@ a.sidebar-link span {
   gap: 8px;
 }
 .btn-sec:hover {
-  background-color: #151313;
+  background-color: #662D91;
   border-color: #151313;
   color: #f7f8fa;
 }
@@ -724,13 +783,19 @@ a.sidebar-link span {
   border: 1.8px solid #e9e9e9;
   background: #f9f9fb;
 }
+
+
 .text_align {
   text-align: center;
 }
+
+
 .btn_content {
   margin-top: 40px;
   gap: 20px;
 }
+
+
 .wallet_balance_num {
   color: #222;
   font-family: Inter;
@@ -739,10 +804,14 @@ a.sidebar-link span {
   font-weight: 700;
   line-height: normal;
 }
+
+
 .line_vertical {
   border: 1px solid #e9e9e9;
   height: 176px;
 }
+
+
 .wallet_detail_desc {
   color: #222;
   font-family: Inter;
@@ -752,9 +821,13 @@ a.sidebar-link span {
   line-height: normal;
 }
 
+
+
 .wallet_account_name {
   margin-top: 16px;
 }
+
+
 .wallet_detail_value {
   color: #222;
   font-family: Inter;
@@ -785,6 +858,8 @@ a.sidebar-link span {
   font-weight: 500;
   line-height: 140%; /* 22.4px */
 }
+
+
 .wallet_status.pending {
   background: #fcaf1b;
   color: #333;

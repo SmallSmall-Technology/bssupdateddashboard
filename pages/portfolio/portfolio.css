@@ -271,7 +271,20 @@ li {
     background: #F9F9FB;
     width: 100%;
 }
+.pay_wallets{
+    display: flex;
+}
 .pay_later_inner{
+    display: flex;
+    width: 100%;
+    margin-left: 33px;
+    margin-top: 33px;
+    margin-bottom: 40px;
+    gap: 55px;
+    align-items: center;
+   
+}
+.pay_later_inners{
     display: flex;
     width: 100%;
     margin-left: 33px;
