@@ -7,6 +7,7 @@
     --color-primary: #662D91;
     --color-white: #ffffff;
     --color-light: #F9F9FB;
+    --color-border:#E9E9E9;
     --transition: all 0.3s ease-in-out;
   
   }
@@ -286,6 +287,7 @@ li {
 }
 .pay_later_inners{
     display: flex;
+    flex-direction: row;
     width: 100%;
     margin-left: 33px;
     margin-top: 33px;
@@ -698,10 +700,113 @@ li {
     border: 1px solid #E9E9E9;
     margin-top: 28px;
 }
+.tracker_container{
+    width: 100%;
+    border: 1px solid var(--color-border);
+    margin-top: 40px;
+    background:  var(--color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+.tracker_inner{
+    width: 91%;
+    display: flex;
+    margin-top: 31px;
+    margin-bottom: 31px;
+}
+.tracker_desc{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+   
+}
+.tracker_title{
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    margin-top: 6px;
+}
+.track_date_container{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 49px;
+    gap: 70px;
+    margin-right: 84px;
+}
+.due_data_value{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
 
+}
+.btn_pay{
+    padding-top: 9px;
+    padding-bottom: 9px;
+    display: flex;
+    gap: 13px;
+    margin-bottom: 0;
+}
+.btn_text_pay{
+    font-family: Hellix;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #FFF;
+
+}
+.tracker_right{
+    margin-left: 56px;
+}
+.track_line{
+    height: 216px;
+    border: 1px solid var(--color-border);
+}
+.track_date_right{
+    margin-top: 49px;
+}
+.track_payment{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    margin-top: 59px;
+
+}
+.nav_tracker{
+    width: 100%;
+}
+.m_top{
+    margin-top: 0;
+}
+.status{
+    padding: 6px 10px 6px 10px;
+    border-radius: 30px;
+    gap: 10px;
+    background: #138E3D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    width: fit-content;
+    color: #FFF;
+}
 .d_gift{
     display: none;
 }
+
+
+
 
 
 

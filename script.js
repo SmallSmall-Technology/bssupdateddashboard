@@ -7,6 +7,10 @@ const program =  document.querySelector('#program');
 const history =  document.querySelector('#history');
 const property =  document.querySelector('#property');
 const certificate =  document.querySelector('#certificate');
+const property1 =  document.querySelector('#property1');
+const tracker =  document.querySelector('#tracker');
+const recent =  document.querySelector('#recent');
+const schedule =  document.querySelector('#schedule');
 // 
 const own_share =  document.querySelector('#own_shares');
 const own_basket =  document.querySelector('#own_gift');
@@ -14,6 +18,11 @@ const own_program =  document.querySelector('#own_program');
 const own_history =  document.querySelector('#own_history');
 const own_property =  document.querySelector('#own_property');
 const own_certificate =  document.querySelector('#own_certificate');
+const own_property1 =  document.querySelector('#own_property1');
+const own_tracker =  document.querySelector('#own_tracker');
+const own_recent =  document.querySelector('#own_recent');
+const own_schedule =  document.querySelector('#own_schedule');
+
 
 let sidebarOpen = false;
 
@@ -103,6 +112,45 @@ function handleCertificate() {
   own_property.classList.add('d_gift');
 }
 
+
+function handleProperty1() {
+  property1.classList.add('active');
+  tracker.classList.remove('active');
+
+  own_property1.classList.remove('d_gift');
+  own_tracker.classList.add('d_gift');
+  
+}
+function handleTracker() {
+  tracker.classList.add('active');
+  property1.classList.remove('active');
+  recent.classList.add('active');
+  schedule.classList.remove('active');
+  own_recent.classList.remove('d_gift');
+  own_schedule.classList.add('d_gift');
+  
+
+  own_tracker.classList.remove('d_gift');
+  own_property1.classList.add('d_gift');
+}
+
+
+function handleRecent() {
+  recent.classList.add('active');
+  schedule.classList.remove('active');
+
+  own_recent.classList.remove('d_gift');
+  own_schedule.classList.add('d_gift');
+  
+}
+function handleShedule() {
+  schedule.classList.add('active');
+  recent.classList.remove('active');
+  
+
+  own_schedule.classList.remove('d_gift');
+  own_recent.classList.add('d_gift');
+}
 
 
 // ---------- CHARTS ----------

@@ -163,27 +163,27 @@
                     </h1>
                     <p class="desc">Manage your portfolio on the BuySmallsmall platform</p>
 
+                    <!-- Navigation tab -->
                     <section class="property_share mtop">
                         <div class="inner-content col_layout">
 
                             <div class="property_nav">
-                                <div class="property_nav_item active">
+                                <div id="property1" class="property_nav_item active" onclick="handleProperty1()">
                                     <img src="../../images/gift.svg" alt="gift" />
                                     <span class="property_text active">Property</span>
-
                                 </div>
-                                <div class="property_nav_item">
+
+                                <div id="tracker" class="property_nav_item" onclick="handleTracker()">
                                     <img src="../../images/file.svg" alt="gift" />
                                     <span class="property_text">Payment tracker</span>
-
                                 </div>
 
                             </div>
                         </div>
-                    </section>
+                    </section> 
 
 
-                    <section class="buyOwnSingle">
+                    <section id="own_property1" class="buyOwnSingle">
                         <div class="buyOwnSingle_main">
                             <div class="buyOwnSingle_main_inner">
 
@@ -319,7 +319,133 @@
 
                         </div>
                     </section>
+
+                    <section id="own_tracker" class=" d_gift">
+
+                        <div class="tracker_container">
+                            <div class="tracker_inner">
+                                <div class="tracker_left">
+                                    <p class="tracker_desc">Next payment</p>
+                                    <h4 class="tracker_title">N13,000,000</h4>
+                                    <div class="track_date_container">
+                                        <div class="track_date">
+                                            <p class="due_data">Due date</p>
+                                            <h6 class="due_data_value">Jan 29, 2024</h6>
+                                        </div>
+                                        <button class="btn btn_pay">
+                                            <p class="btn_text_pay">Pay</p>
+                                            <img src="../../images/btn_pay.svg" alt=""/>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="track_line"></div>
+                                <div class="tracker_right">
+                                    <p class="tracker_desc">Total paid</p>
+                                    <h4 class="tracker_title">N53,000,000</h4>
+                                    
+                                    <div class="track_date_right">
+                                        <p class="due_data">Pending payment</p>
+                                        <h6 class="due_data_value">Jan 29, 2024</h6>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="track_payment">Payments</h4>
+
+                        <!-- nav -->
+                        <div class="nav_tracker">
+                            <div class="inner-content col_layout m_top">
+    
+                                <div class="property_nav">
+                                    <div id="recent" class="property_nav_item active m_top" onclick="handleRecent()">
+                                        <span class="property_text active">Recent Payment</span>
+                                    </div>
+    
+                                    <div id="schedule" class="property_nav_item m_top" onclick="handleShedule()">
+                                        <span class="property_text">Payment Schedule</span>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="own_recent" class="data_tbl data_tbl_history">
+                            <div class="data_tbl_inner tbl_mob">
+                               
+                                <table class="table tb_mobile">
+                                    <thead class="thead">
+                                        <tr>
+                                            <td scope="col" class="tb-color">Amount</td>
+                                            <td scope="col" class="tb-color">Status</th>
+                                            <td scope="col" class="tb-color">Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="tl_text">N10,000,000</td>
+                                            <td class="tl_text"> <p class="status">Successful</p></td>   
+                                            <td class="tl_text">N10,000,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tl_text">N10,000,000</td>
+                                            <td class="tl_text"> <p class="status">Successful</p></td>   
+                                            <td class="tl_text">N10,000,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tl_text">N10,000,000</td>
+                                            <td class="tl_text"> <p class="status">Successful</p></td>   
+                                            <td class="tl_text">N10,000,000</td>
+                                        </tr>
+                                        
+                                       
+                                    </tbody>
+                                </table>
+    
+                                <!-- for mobile -->
+    
+                            </div>
+                        </div>
+
+
+
+                        <div id="own_schedule" class="data_tbl data_tbl_history d_gift">
+                            <div class="data_tbl_inner tbl_mob">
+                               
+                                <table class="table tb_mobile">
+                                    <thead class="thead">
+                                        <tr>
+                                            <td scope="col" class="tb-color">Amount due</td>
+                                            <td scope="col" class="tb-color">Due Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="tl_text">N10,000,000</td>
+                                            <td class="tl_text">21/05/2023</td>   
+                                        </tr>
+                                        <tr>
+                                            <td class="tl_text">N10,000,000</td>
+                                            <td class="tl_text">21/06/2023</td>   
+                                        </tr>
+                                        <tr>
+                                            <td class="tl_text">N10,000,000</td>
+                                            <td class="tl_text">21/02/2023</td>   
+                                        </tr>
+                                        
+                                       
+                                    </tbody>
+                                </table>
+    
+                                <!-- for mobile -->
+    
+                            </div>
+                        </div>
+
+                    </section>
                 </div>
+                <p class="copyright">&copy copyright 2023 Buysmallsmall by Smallsmall Technology LTD<p/>
             </div>
         </div>
 

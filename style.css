@@ -3,6 +3,15 @@
 /*-------------------------
     Variables
 -------------------------*/
+
+.copyright{
+  margin-top: 19%;
+  margin-left: 4%;
+  font-size: 70%;
+  
+  }
+
+
 :root {
   --color-primary: #662d91;
   --color-white: #ffffff;
@@ -122,6 +131,7 @@ body {
   width: 100%;
   /* overflow: hidden; */
   margin: 0 auto;
+  background-color: var(--color-main);
 }
 
 
@@ -1056,6 +1066,18 @@ a.sidebar-link span {
   padding: 11px 56px 11px 38px;
   margin-left: 25px;
 }
+
+.pay_later_inners{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 33px;
+  margin-top: 33px;
+  margin-bottom: 40px;
+  gap: 55px;
+  align-items: center;
+ 
+}
 @media (max-width: 1000px) {
   #sidebar {
     width: 0px;
@@ -1255,6 +1277,15 @@ a.sidebar-link span {
     display: block;
   }
 }
+
+@media (max-width:900px){
+  .pay_later_inners{
+    flex-direction: column;
+  }
+  .line_vertical{
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   .mobil_row {
     width: 100%;
@@ -1265,6 +1296,10 @@ a.sidebar-link span {
   }
   .tbl_title {
     font-size: 1.5rem;
+  }
+  .wallet_account_detail{
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 450px) {
