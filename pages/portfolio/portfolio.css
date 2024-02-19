@@ -42,10 +42,13 @@ li {
     width: 100%;
     margin-top: 117px;
 }
+
+
 .property_shares{
     width: 100%;
     margin-top: 40px;
 }
+
 .property_pay{
     border-radius: 6px;
     width: 24px;
@@ -55,9 +58,13 @@ li {
     justify-content: center;
     background: #662D91;
 }
+
+
 .property_pay span{
     color: var(--color-white);
 }
+
+
 .property_title{
     color: #222;
     font-family: Inter;
@@ -72,11 +79,14 @@ li {
     display: flex;
     flex-direction: column;
 }
+
 .property_nav{
     display: flex;
     gap: 25px;
     border-bottom: 1px solid #E9E9E9;
 }
+
+
 .property_nav_item{
     display: flex;
     margin-top: 44px;
@@ -87,6 +97,8 @@ li {
     cursor: pointer;
     
 }
+
+
 .property_nav_item.active{
     border-bottom: 1px solid #662D91;
 }
@@ -99,9 +111,11 @@ li {
     font-weight: 600;
     line-height: normal;
 }
+
 .property_text.active{
     color: #222;
 }
+
 .property_num{
     
     border: 1.3px solid #A6A299;
@@ -113,6 +127,7 @@ li {
     justify-content: center;
    
 }
+
 .property_num.active{
     background: #662D91;
     width: 41px;
@@ -157,6 +172,7 @@ li {
     margin-top: 6px;
 }
 
+
 .share_content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -165,6 +181,7 @@ li {
     margin-left: 30px;
     margin-right: 30px;
 }
+
 .pay_small_content{
     width: 100%;
     display: flex;
@@ -310,6 +327,7 @@ li {
     font-weight: 600;
     line-height: normal;
 }
+
 .paylater_text{
     color: #222;
     font-family: Inter;
@@ -318,6 +336,7 @@ li {
     font-weight: 500;
     line-height: normal;
 }
+
 .bbn_property{
     color: #222;
     font-family: Inter;
@@ -327,18 +346,21 @@ li {
     line-height: normal;
     margin-top: 36px;
 }
+
 .mtop{
     margin-top: 0;
 }
+
 .buyOwnSingle{
     width: 100%;
     display: flex;
     
     gap: 14px;
     margin-top: 23px;
-    
    
 }
+
+
 .buyOwnSingle_main{
     width: 71%;
     border-radius: 10px;
@@ -346,12 +368,17 @@ li {
     background: #F9F9FB;
     
 }
+
 .buyOwnSingle_main_inner{
     margin-left: 50px;
 }
+
+
 .buyOwnSingle_main_inner_cert{
     margin-left: 30px;
 }
+
+
 .cert_img_container{
     display: flex;
     flex-direction: column;
@@ -380,6 +407,8 @@ li {
     width: fit-content;
 
 }
+
+
 .buyOwnSingle_btn{
     display: inline-block;
     border-radius: 8px;
@@ -391,11 +420,14 @@ li {
     font-weight: 500;
     line-height: normal;
 }
+
+
 .buyOwnSingle_btn.active{
     font-weight: 400;
     color: #FFF;
     background: #662D91;
 }
+
 .buyOwnSingle_main_text{
     color: #222;
     font-family: Inter;
@@ -405,6 +437,7 @@ li {
     line-height: normal;
     margin-top: 30px;
 }
+
 .buyOwnSingle_main_texts{
     color: #222;
     font-family: Inter;
@@ -414,6 +447,8 @@ li {
     line-height: normal;
     margin-top: 30px;
 }
+
+
 .buyOwnSingle_main_desc{
     color: #222;
     font-family: Inter;
@@ -439,6 +474,7 @@ li {
     padding-bottom: 23px;
    
 }
+
 .share_info_td.bdNone{
     border: none;
    margin-top: 50px;
@@ -450,6 +486,7 @@ li {
     gap: 9px;
     justify-content: center;
 }
+
 .share_info_item_title{
     color: #222224;
     font-family: Inter;
@@ -458,6 +495,7 @@ li {
     font-weight: 400;
     line-height: normal;
 }
+
 .share_info_item_num{
     color: #222224;
     font-family: Inter;
@@ -470,9 +508,11 @@ li {
 .share_info_td{
     padding-right: 20px;
 }
+
 .buyOwnSingle_container{
     width: 28%;
 }
+
 .buyOwnSingle_aside{
     width: 100%;
     border-radius: 10px;
@@ -483,10 +523,13 @@ li {
     align-items: center;
     justify-content: center;
 }
+
 .buyOwnerAside_inner{
     width: 95%;
     margin-bottom: 33px;
 }
+
+
 .buyOwnSingle_aside_title{
     color: var(--Grey-900, #16161D);
     font-family: Inter;
@@ -498,11 +541,15 @@ li {
     margin-bottom: 15px;
     
 }
+
+
 .buyOwnerAside_shares_item_content{
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
+
+
 .buyOwnerAside_shares{
     display: flex;
     flex-direction: column;
@@ -670,7 +717,8 @@ li {
 }
 .display_basket{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap:55%;
     margin-left: 30px;
     margin-top: 32px;
 }
