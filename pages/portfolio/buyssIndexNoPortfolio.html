@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar With Bootstrap</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <aside id="sidebar" class="expand">
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="../../images/Logo.svg" alt="Logo" class="d-inline-block align-text-top">
+                </a>
+                <img class="close_btn" src="../../images/close.svg" alt="" onclick="closeSidebar()" />
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="./index.html" class="sidebar-link">
+                        <img src="../../images/home2.svg" alt="home">
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+
+                    <button class="sidebar-link collapsed has-dropdown" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="false" aria-controls="collapseExample">
+                        <img src="../../images/portfolio2.svg" alt="home">
+                        <span>Portfolio</span>
+                    </button>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="../../pages/portfolio/bye2co_own.html"
+                                class="sidebar-link d-flex justify-content-between">
+                                <span>Buy2Co-own</span>
+                                <span>7</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="../../pages/portfolio/buyNowPayLater.html"
+                                class="sidebar-link d-flex justify-content-between">
+                                <span>BuyNowPayLater</span>
+                                <span>1</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="../../pages/portfolio/ownNowPayLater.html"
+                                class="sidebar-link d-flex justify-content-between">
+                                <span>OwnNowPayLater</span>
+                                <span>1</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="../../pages/buyss_market_insight.html" class="sidebar-link">
+                        <img src="../../images/market2.svg" alt="home">
+                        <span>Market insight</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="../../pages/wallet.html" class="sidebar-link">
+                        <img src="../../images/wallet2.svg" alt="">
+                        <span>Wallet</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="../../pages/buyss_referral.html" class="sidebar-link">
+                        <img src="../../images/referral2.svg" alt="home">
+                        <span>Referral</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <!-- <a href="#Support" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#support" aria-expanded="false" aria-controls="support">
+                        <img src="./images/support.svg" alt="home">
+                        <span>Support</span>
+                    </a> -->
+                    <button class="sidebar-link collapsed has-dropdown" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#support" aria-expanded="false" aria-controls="collapseExample">
+                        <img src="../../images/support2.svg" alt="home">
+                        <span class="support_link">Support</span>
+                    </button>
+                    <ul id="support" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <div class="line_divider"></div>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link d-flex justify-content-between">
+                                Notification
+                            </a>
+
+
+
+
+
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link d-flex justify-content-between">
+                                Knowledgebase
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link d-flex justify-content-between"> Goto BuySmallsmall
+                                Website</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </aside>
+        <div class="main">
+            <div class="profile_modal">
+                <a href="./pages/profile.html" class="profile_modal_row">
+                    <img src="../../images/profile.svg" alt="" />
+                    <p class="profile_modal_row_text">Profile</p>
+                </a>
+                <div class="profile_modal_row">
+                    <img src="../../images/exit.svg" alt="" />
+                    <p class="profile_modal_row_text">Logout</p>
+                </div>
+            </div>
+            <header class="header">
+
+                <div class="inner-wrapper">
+                    <div class="d-flex justify-content-center g-23 align-items-center">
+                        <div class="toggle_menu menu-icon" onclick="openSidebar()">
+                            <img class="handburger" src="../../images/handburger.svg" alt="" />
+                        </div>
+                        <div class="header-left">
+                            <span class="welcome">Welcome, Bright</span>
+                        </div>
+                    </div>
+                    <!-- <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                    </button> -->
+
+                    <div class="header-right">
+                        <img class="nav_img" src="../../images/globe.svg" alt="" />
+                        <img class="nav_img" src="../../images/help.svg" alt="" />
+                        <img src="../../images/bell.png" alt="" />
+                        <div class="avater_profile" onclick="openModalPofile()">
+                            <img src="../../images/avater.svg" alt="" />
+                            <div class="profile_better">
+                                <p class="bright">Bright</p>
+                                <img src="../../images/Arrowdown.svg" alt="" />
+                            </div>
+                        </div>
+                        <img class="logoMobile" src="../../images/logoMobile.svg" alt="" />
+                    </div>
+                </div>
+
+
+
+
+            </header>
+
+            <!-- Main Area -->
+            <div class="main-content">
+                <div class="content">
+                    <h1 class="title">
+                        BuySmallsmall Portfolio Dashboard
+                    </h1>
+                    <p class="desc">Manage all your portfolio on the BuySmallsmall platform</p>
+                    <!-- info -->
+                    <section class="info">
+                        <div class="info-text">
+                            <img src="../../images/infoIcon.svg" alt="info" />
+                            <div class="info-desc">
+                                <h4 class="info-title">Grow your portfolio with property shares</h4>
+                                <p class="info-desc">Start with N4,000 and keeping growing</p>
+                            </div>
+                        </div>
+                        <button class="btn mg_left">
+                            Buy shares
+                        </button>
+                    </section>
+                    
+                    
+                    <div class="">
+                        
+                        <h4 class="hey">Hi Bright, You have no property in your portfolio</h4>
+                        <p>
+                            Get started to grow your property shares
+                            <img src="../../images/arrow-right.svg" alt="arrow right" />
+                        </p>
+    
+                        
+                            <p>
+                                or Buy a home in 5 years
+                                <img src="../../images/arrow-right.svg" alt="arrow right" />
+                            </p>
+                    </d>
+
+
+
+                    <div class="bar_lines"></div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <p class="copyright">&copy copyright 2023 Buysmallsmall by Smallsmall Technology LTD
+        </p>
+    </div>
+    
+        </div>
+        
+        </div>
+
+        </div>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script> -->
+        <script src="bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
