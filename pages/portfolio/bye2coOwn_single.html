@@ -187,10 +187,226 @@
                             <div class="buyOwnSingle_main_inner">
 
                                 <div class="buyOwnSingle_btnContainer">
-                                    <span class="buyOwnSingle_btn active">
+                                    <!-- <span class="buyOwnSingle_btn active">
                                         Liquidate
-                                    </span>
+                                    </span> -->
 
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                        Liquidate
+                                    </button>
+
+                                    <!-- Modal 1-->
+                                    <!-- To activate this pop-up, remove the "d-none" on the "id" -->
+                                    <div class="modal fade d-none" id="staticBackdrop d-none" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog ">
+                                            <div class="modal-content  p-5 modalone-content-styling ">
+                                                <div class="modal-header">
+
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div>
+                                                    <h1 class="modal-title fs-5 ml-18  liquidate-shares-popup "
+                                                        id="staticBackdropLabel">
+                                                        Liquidate Shares 1 </h1>
+                                                    <small class="share-owned-modalone">Share Owned <span
+                                                            class="share-owned-modalonespan">200</span></small>
+                                                </div>
+                                                <div class="modal-body ">
+                                                    <p class="modalone-body-styling">Please enter the number of shares
+                                                        you wish to liquidate
+                                                        and we will calculate your shares</p>
+                                                    <p>Enter number of shares you wish to liquidate</p>
+                                                    <h2 class="modalone-zero">0</h2>
+                                                </div>
+                                                <div class="modal-footer">
+
+                                                    <button type="button"
+                                                        class="btn btn-primary w-100 ">Liquidate</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Modal 2-->
+               <!-- To activate this pop-up, remove the "d-none" on the "id" -->
+                                    <div class="modal fade " id="staticBackdrop d-none" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog ">
+                                            <div class="modal-content p-5">
+                                                <div class="modal-header">
+
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div>
+                                                    <h1 class="modal-title fw-semibold  ml-18 modaltwo-header-styling"
+                                                        id="staticBackdropLabel">
+                                                        Congratulations!! </h1>
+
+                                                </div>
+                                                <div class="modal-body text-center modaltwo-body">
+                                                    <p>Your shares have gone through a calendar year and below is the
+                                                        value of your shares</p>
+
+                                                    <p class="modal-two-paratwo">Shares value</p>
+                                                    <h2 class="modal-two-header">N20,000</h2>
+
+
+                                                </div>
+                                                <div class="">
+
+                                                    <div class=" gap-3   modaltwo-button ">
+                                                        <button class="btn btn-primary w-75  h-75" type="button">I want
+                                                            to go ahead</button>
+                                                        <button class="btn bg-light bb w-75 h-75" type="button"> Cancel,
+                                                            I will not Liquidate</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- modal 3  -->
+                  <!-- To activate this pop-up, remove the "d-none" on the "id" -->
+                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog ">
+                                        <div class="modal-content p-5">
+                                            <div class="modal-header">
+
+
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div>
+                                                <h1 class="modal-title fw-semibold  ml-18 modaltwo-header-styling"
+                                                    id="staticBackdropLabel">
+                                                    Congratulations!!</h1>
+
+                                            </div>
+                                            <div class="modal-body text-center modaltwo-body">
+                                                <p>Your shares have gone through a calendar year and below is the
+                                                    value of your shares</p>
+
+                                                <p class="modal-two-paratwo">Shares value</p>
+                                                <h2 class="modal-two-header">N200,000</h2>
+
+
+                                            </div>
+                                            
+                                           
+                                                <div class="modal-three-div-styling">
+                                                    <img src="../../images/danger.svg" class="danger-modal-styling mt-4 mb-4" alt="danger">
+                                                    <h1 class="modal-title fw-semibold   modal-three-header "
+                                                        id="staticBackdropLabel">
+                                                        Attention!! </h1>
+
+                                                </div>
+
+                                                <div class="modal-footer">
+
+                                                <P class="text-center">It seems you have not created a wallet, you need to have a wallet to receive a payout for your shares.</P>
+                                            </div>
+                                            <div class="">
+
+                                                <div class=" gap-3   modaltwo-button ">
+                                                    <button class="btn btn-primary w-75  h-75 modal-three-btn" type="button">Create wallet now</button>
+                              
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    <!-- Modal 4-->
+                     <!-- To activate this pop-up, remove the "d-none" on the "id" -->
+                                    <div class="modal fade " id="staticBackdrop d-none" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog ">
+                                            <div class="modal-content p-5">
+                                                <div class="modal-header">
+
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div>
+                                                    <img src="../../images/danger.svg" class="danger-modal-styling" alt="danger">
+                                                    <h1 class="modal-title fw-semibold  ml-18 modaltwo-header-styling"
+                                                        id="staticBackdropLabel">
+                                                        Attention!! </h1>
+
+                                                </div>
+                                                <div class="modal-body text-center modaltwo-body">
+                                                    <p>Your shares have not gone through a 
+                                                        calendar year and you are going to make a loss</p>
+
+                                                    <p class="modal-two-paratwo">Loss amount</p>
+                                                    <h2 class="modal-two-header">N20,000</h2>
+
+
+                                                </div>
+                                                <div class="">
+
+                                                    <div class=" gap-3   modaltwo-button ">
+                                                        <button class="btn btn-primary w-75  h-75" type="button">I want
+                                                            to go ahead</button>
+                                                        <button class="btn bg-light bb w-75 h-75" type="button"> Cancel,
+                                                            I will not Liquidate</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- Modal 5-->
+                     <!-- To activate this pop-up, remove the "d-none" on the "id" -->
+                                    <div class="modal fade " id="staticBackdrop d-none" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="liquidate-complete-modal">
+                                                    <img src="../../images/complete.svg" alt="complete">
+                                                    <h1 class="modal-title fs-35 " id="staticBackdropLabel">
+                                                        Liquidate complete! </h1>
+                                                    <small>Your payout has been successfully sent to your wallet</small>
+                                                </div>
+                                                
+                                                <div class="">
+
+                                                    <button type="button" class="btn btn-primary w-75 h-100 m-5">Liquidate</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                
+ 
                                     <span class="buyOwnSingle_btn ">
                                         Transfer Shares
                                     </span>
@@ -282,10 +498,13 @@
                                                 </td>
 
                                             </tr>
+                                            
                                         </tbody>
+                                        
                                     </table>
                                 </div>
                             </div>
+                            <button class="btn" style="margin-top: 23px; margin-left:6%;">Liquidate Shares</button>
                         </div>
 
                         <div class="buyOwnSingle_container">
@@ -447,11 +666,12 @@
                     </section>
                 </div>
             </div>
-            <p class="copyright">&copy copyright 2023 Buysmallsmall by Smallsmall Technology LTD<p/>
+            <p class="copyright">&copy copyright 2023 Buysmallsmall by Smallsmall Technology LTD
+                <p />
         </div>
 
     </div>
-    
+
     <!-- ApexCharts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
     <script src="../../bootstrap.bundle.min.js"></script>
